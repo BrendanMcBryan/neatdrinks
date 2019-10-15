@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
+import React from "react";
+import ReactDOM from "react-dom";
+import Button from "@material-ui/core/Button";
 
 function App() {
   return (
-    <Button variant="contained" color="primary">
+    <div>
       Hello World
-    </Button>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+    </div>
   );
 }
 
