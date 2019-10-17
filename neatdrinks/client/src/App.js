@@ -2,6 +2,7 @@ import React from "react";
 // import ReactDOM from "react-dom";
 import { Button, Box, Container, TextField } from "@material-ui/core/";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 
 
@@ -10,7 +11,7 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <Container maxWidth="sm">
-      <Nav></Nav>
+      <Nav />
 
       <Button variant="contained" color="primary">
         Hello World
@@ -27,6 +28,7 @@ function App() {
       </form>
 
       <Box color="primary.main">primary.main</Box>
+      <Footer />
     </Container>
   );
 }
