@@ -1,5 +1,6 @@
 import React from "react";
 // import ReactDOM from "react-dom";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {Container} from "@material-ui/core/";
 
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" component={Landing} />
       </Container>
     </Router>
+
   );
 }
 
