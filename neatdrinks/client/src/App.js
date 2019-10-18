@@ -1,31 +1,19 @@
 import React from "react";
 // import ReactDOM from "react-dom";
-import { Button, Box, Container, TextField } from "@material-ui/core/";
-import Nav from "./components/Nav";
 
-import Footer from "./components/Footer";
-import LoginForm from "./components/LoginForm";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import {Container} from "@material-ui/core/";
 
-
-// import Nav from "./components/Nav";
+import Landing from "./pages/Landing"
 
 function App() {
   return (
-    <Container maxWidth="sm">
+    <Router>
+      <Container maxWidth="sm">
+      <Route exact path="/" component={Landing} />
+      </Container>
+    </Router>
 
-      <Nav />
-
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button> 
-
-      <Box color="primary.main">primary.main</Box>
-      <Footer />
-
-      <LoginForm />
-      {/* <Box color="primary.main">primary.main</Box> */}
-
-    </Container>
   );
 }
 
