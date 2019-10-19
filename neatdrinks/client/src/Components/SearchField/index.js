@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Select from "react-select";
-import { emphasize, makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import NoSsr from "@material-ui/core/NoSsr";
 import TextField from "@material-ui/core/TextField";
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   input: {
     display: "flex",
     padding: 0,
-    height: "auto",
+    height: "auto"
   },
   valueContainer: {
     display: "flex",
@@ -291,7 +291,7 @@ export default function IntegrationReactSelect() {
           classes={classes}
           styles={selectStyles}
           inputId="react-select-single"
-          TextFieldProps={{
+              TextFieldProps={{
             label: "spirit",
             InputLabelProps: {
               htmlFor: "react-select-single",
@@ -309,3 +309,82 @@ export default function IntegrationReactSelect() {
     </div>
   );
 }
+
+// take a look at this code and consider switching to it when we have state set up 
+
+// import React from "react";
+// import { makeStyles } from "@material-ui/core/styles";
+// import MenuItem from "@material-ui/core/MenuItem";
+// import TextField from "@material-ui/core/TextField";
+
+// const useStyles = makeStyles(theme => ({
+//   container: {
+//     display: "flex",
+//     flexWrap: "wrap"
+//   },
+//   textField: {
+//     marginLeft: theme.spacing(1),
+//     marginRight: theme.spacing(1),
+//     width: 200
+//   },
+//   dense: {
+//     marginTop: 19
+//   },
+//   menu: {
+//     width: 200
+//   }
+// }));
+
+// const spirits = [
+//   {
+//     value: "tequila",
+//     label: "tequila"
+//   },
+//   {
+//     value: "gin",
+//     label: "gin"
+//   },
+//   {
+//     value: "vodka",
+//     label: "vodka"
+//   },
+//   {
+//     value: "whiskey",
+//     label: "whiskey"
+//   }
+// ];
+
+// export default function SearchInput() {
+//   const classes = useStyles();
+//   const [values, setValues] = React.useState({
+//     spirit: "tequila"
+//   });
+
+//   const handleChange = name => event => {
+//     setValues({ ...values, [name]: event.target.value });
+//   };
+
+//   return (
+//     <TextField
+//       id="standard-select-spirit"
+//       select
+//       label="Select"
+//       className={classes.textField}
+//       value={values.spirits}
+//       onChange={handleChange("spirit")}
+//       SelectProps={{
+//         MenuProps: {
+//           className: classes.menu
+//         }
+//       }}
+//       helperText="Please select your spirit"
+//       margin="normal"
+//     >
+//       {spirits.map(option => (
+//         <MenuItem key={option.value} value={option.value}>
+//           {option.label}
+//         </MenuItem>
+//       ))}
+//     </TextField>
+//   );
+// }
