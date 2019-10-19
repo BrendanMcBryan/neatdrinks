@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ComplexGrid() {
+export default function DrinkCard() {
   const classes = useStyles();
 
   return (
