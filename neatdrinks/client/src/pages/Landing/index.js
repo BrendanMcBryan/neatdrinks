@@ -12,11 +12,11 @@ export default function Landing() {
   return (
     <div>
       {/* <Nav /> */}
-      <Logo />
-      <LoginForm />
-      <DrinkCard />
-      <NewAccountButton />
-      <Footer />
+        <Logo />
+        <LoginForm />
+        <DrinkCard />
+        <NewAccountButton />
+        <Footer />
     </div>
   );
 }

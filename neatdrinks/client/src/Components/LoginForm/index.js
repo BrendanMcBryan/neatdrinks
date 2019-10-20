@@ -3,11 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles(theme => ({
+  
   container: {
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   },
   textField: {
+
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1)
   },
@@ -16,7 +18,10 @@ const useStyles = makeStyles(theme => ({
   },
   menu: {
     width: 200
-  }
+  }, notchedOutline: {
+    borderWidth: '1px',
+    borderColor: 'green !important'
+  },
 }));
 
 export default function LoginForm() {
@@ -36,8 +41,10 @@ export default function LoginForm() {
     <form className={classes.container} noValidate autoComplete="off">
       <TextField
         id="outlined-email-input"
+        borderColor="red"
         label="Email"
         className={classes.textField}
+        borderRadius={16}
         type="email"
         name="email"
         fullWidth
