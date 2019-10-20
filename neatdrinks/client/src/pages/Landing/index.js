@@ -3,7 +3,7 @@ import React from "react";
 // import Nav from "../../components/Nav";
 import Logo from "../../components/Logo";
 import LoginForm from "../../components/LoginForm";
-import DrinkCard from "../../components/DrinkCard";
+import DrinkCardList from "../../components/DrinkCardList";
 import NewAccountButton from "../../components/NewAccountButton";
 import Footer from "../../components/Footer";
 
@@ -14,7 +14,7 @@ export default function Landing() {
       {/* <Nav /> */}
         <Logo />
         <LoginForm />
-        <DrinkCard />
+        <DrinkCardList />
         <NewAccountButton />
         <Footer />
     </div>

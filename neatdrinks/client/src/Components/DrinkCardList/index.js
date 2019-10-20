@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
  *   },
  * ];
  */
-export default function ImageGridList() {
+export default function DrinkCardList() {
   const classes = useStyles();
 
   return (
@@ -45,6 +45,21 @@ export default function ImageGridList() {
       <GridList cellHeight={160} className={classes.gridList} cols={1}>
 
         {/* TODO This section needs to loop through whatever Array of drinks is sent to it and then output a list of Drink Cards */}
+        <GridListTile>
+          <DrinkCard />
+        </GridListTile>
+        <GridListTile>
+          <DrinkCard />
+        </GridListTile>
+        <GridListTile>
+          <DrinkCard />
+        </GridListTile>
+        <GridListTile>
+          <DrinkCard />
+        </GridListTile>
+        <GridListTile>
+          <DrinkCard />
+        </GridListTile>
         <GridListTile>
           <DrinkCard />
         </GridListTile>

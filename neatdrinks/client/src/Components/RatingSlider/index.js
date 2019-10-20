@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import Slider from "@material-ui/core/Slider";
 import Tooltip from "@material-ui/core/Tooltip";
 
@@ -47,7 +47,7 @@ ValueLabelComponent.propTypes = {
 
 const PrettoSlider = withStyles({
   root: {
-    color: "#52af77",
+    color: ThemeProvider.primary,
     height: 8
   },
   thumb: {
