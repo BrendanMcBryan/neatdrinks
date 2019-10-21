@@ -7,8 +7,6 @@ import Logo from "../../components/Logo";
 import RecipeForm from "../../components/RecipeForm";
 import RecipeFormDetail from "../../components/RecipeFormDetail";
 import Footer from "../../components/Footer";
-
-import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";

@@ -4,11 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import ButtonBase from "@material-ui/core/ButtonBase";
-import CustomizedSlider from "../RatingSlider";
-import { borders } from "@material-ui/system";
-import { red } from "@material-ui/core/colors";
-
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1

@@ -3,11 +3,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Switch from "@material-ui/core/Switch";
 import Paper from "@material-ui/core/Paper";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 
+import SearchField from "../SearchField";
+import DrinkCardList from "../DrinkCardList";
+
 const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(3, 2),
+    margin: 3
+  },
   container: {
     display: "flex",
     flexWrap: "wrap"
@@ -38,39 +46,32 @@ export default function RecipeForm() {
   };
 
   return (
-    <form className={classes.container} noValidate autoComplete="on">
-      <TextField
-        required
-        id="filled-required"
-        label="drinkName"
-        defaultValue="Drink Name"
-        className={classes.textField}
-        margin="normal"
-        fullWidth
-        variant="filled"
-      />
-
-      <TextField
-        id="standard-uncontrolled"
-        // label="drinkBaseOn"
-        defaultValue="classic drink"
-        className={classes.textField}
-        margin="normal"
-        fullWidth
-        helperText="If your drink is a take on a classic cocktail, enter here."
-        variant="outlined"
-      />
-      <TextField
-        id="drink-description"
-        label="Drink Description"
-        className={classes.textField}
-        margin="normal"
-        variant="outlined"
-        multiline
-        fullWidth
-        rows="4"
-        helperText="Place your Drink Recipe here"
-      />
-    </form>
+    <Paper>
+      <Paper>
+        {" "}
+        <form className={classes.container} noValidate autoComplete="on">
+          <TextField
+            required
+            id="filled-required"
+            label="SearchTerm"
+            defaultValue="Drink Search"
+            className={classes.textField}
+            margin="normal"
+            fullWidth
+            variant="filled"
+          />
+          <SearchField />
+          <Divider />
+        </form>
+      </Paper>
+      <Paper className={classes.root}>
+        <Typography variant="h4" component="h1" color="secondary">
+          Results are below
+        </Typography>
+      </Paper>
+      <Paper className={classes.root}>
+        <DrinkCardList />
+      </Paper>
+    </Paper>
   );
 }

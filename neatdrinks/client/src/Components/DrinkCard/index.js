@@ -5,9 +5,6 @@ import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import CustomizedSlider from "../RatingSlider";
-import { borders } from "@material-ui/system";
-import { red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,8 +27,7 @@ const useStyles = makeStyles(theme => ({
   img: {
     margin: "auto",
     display: "block",
-    maxWidth: "100%",
-    maxHeight: "100%"
+    maxWidth: "100%"
   }
 }));
 

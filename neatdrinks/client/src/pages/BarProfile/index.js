@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 // import Nav from "../../components/Nav";
 import LogoText from "../../components/LogoText";
 import NewDrinkButton from "../../components/NewDrinkButton";
-import RecipeFormDetail from "../../components/RecipeFormDetail";
 import Footer from "../../components/Footer";
 
 import Grid from "@material-ui/core/Grid";
