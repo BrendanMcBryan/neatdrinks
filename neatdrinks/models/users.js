@@ -6,7 +6,6 @@ module.exports = function(sequelize, DataTypes) {
             unique: true,
         },
         password: DataTypes.STRING,
-        user_type: DataTypes.INTEGER,
         email: {
             type: DataTypes.STRING,
             unique: true,
@@ -19,5 +18,6 @@ module.exports = function(sequelize, DataTypes) {
         state: DataTypes.STRING,
         zip: DataTypes.STRING,
     });
+
     return User;
   };
