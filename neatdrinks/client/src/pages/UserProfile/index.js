@@ -5,11 +5,10 @@ import { makeStyles } from "@material-ui/core/styles";
 // import Nav from "../../components/Nav";
 import LogoText from "../../components/LogoText";
 import Footer from "../../components/Footer";
+import DrinkCardList from "../../components/DrinkCardList";
 
 import Paper from "@material-ui/core/Paper";
-import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import DrinkCardList2 from "../../components/DrinkCardList2";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +34,7 @@ export default function User() {
         Your rated Drinks are below
       </Paper>
       <Paper className={classes.root}>
-        <DrinkCardList2/>
+        <DrinkCardList/>
       </Paper>
       <Footer />
     </div>
