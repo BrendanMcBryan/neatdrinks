@@ -19,5 +19,13 @@ module.exports = function(sequelize, DataTypes) {
         zip: DataTypes.STRING,
     });
 
+    User.associate = function(models) {
+        User.belongsTo(models.UserType, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
+
     return User;
   };

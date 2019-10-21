@@ -11,13 +11,5 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
 
-    UserType.associate = function(models) {
-        UserType.hasOne(models.User, {
-            foreignKey: {
-                allowNull: false
-            }
-        });
-    };
-
     return UserType;
   };
