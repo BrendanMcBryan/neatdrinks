@@ -6,7 +6,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 const useStyles = makeStyles({
   root: {
     backgroundColor: "inherit",
-    textAlign: "center"
+    textAlign: "center",
+    zIndex: 5000
   },
   card: {
     backgroundColor: "inherit",
