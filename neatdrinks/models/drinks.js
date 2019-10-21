@@ -18,6 +18,8 @@ module.exports = function(sequelize, DataTypes) {
                 allowNull: false
             }
         });
+
+        Drink.belongsToMany(models.Ingredient, {through: 'Drink_Ingredient'});
     };
 
     return Drink;
