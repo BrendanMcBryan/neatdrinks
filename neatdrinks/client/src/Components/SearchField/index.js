@@ -21,21 +21,30 @@ const suggestions = [
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: 250,
+    // height: 250,
     minWidth: 290,
-    color: "primary"
+    color: "primary",
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2)
+
+    
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1)
   },
   input: {
     display: "flex",
-    padding: 0,
+    padding: 10,
     height: "auto",
+    margin: "normal"
   },
   valueContainer: {
     display: "flex",
     flexWrap: "wrap",
     flex: 1,
     alignItems: "center",
-    overflow: "hidden",
+    overflow: "hidden"
   },
   singleValue: {
     fontSize: 16
@@ -50,8 +59,8 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     zIndex: 1,
     marginTop: theme.spacing(1),
-    left: 0,
-    right: 0
+    left: 16,
+    right: 16
   },
   divider: {
     height: theme.spacing(2)
@@ -80,6 +89,7 @@ function Control(props) {
 
   return (
     <TextField
+      margin="normal"
       fullWidth
       InputProps={{
         inputComponent,
@@ -119,6 +129,7 @@ Control.propTypes = {
 function Option(props) {
   return (
     <MenuItem
+    margin="normal"
       ref={props.innerRef}
       selected={props.isFocused}
       component="div"
@@ -288,6 +299,7 @@ export default function IntegrationReactSelect() {
     <div className={classes.root}>
       <NoSsr>
         <Select
+        margin="normal"
           classes={classes}
           styles={selectStyles}
           inputId="react-select-single"

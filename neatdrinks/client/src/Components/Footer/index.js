@@ -6,15 +6,15 @@ import CardMedia from "@material-ui/core/CardMedia";
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
-    backgroundColor: 'inherit'
+    // width: 500,
+    backgroundColor: "inherit"
   },
   card: {
-    maxWidth: 80,
-    backgroundColor: 'inherit',
-    boxShadow: 'none',
-    height: 140
-  },
+    maxWidth: 72,
+    backgroundColor: "inherit",
+    boxShadow: "none",
+    height: 115
+  }
 });
 
 export default function Footer() {
