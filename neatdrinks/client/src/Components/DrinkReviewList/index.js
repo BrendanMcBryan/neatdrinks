@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export default function DrinkReviewCardList() {
+export default function DrinkReviewList() {
   const classes = useStyles();
 
   return (
