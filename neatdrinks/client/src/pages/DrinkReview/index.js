@@ -42,7 +42,7 @@ export default function DrinkReview() {
         <RatingSlider />
       </Paper>
       <Paper className={classes.root}>
-        {/* <DrinkReviewLgitist /> */}
+        {/* <DrinkReviewList /> */}
       </Paper>
       <Footer />
     </div>
