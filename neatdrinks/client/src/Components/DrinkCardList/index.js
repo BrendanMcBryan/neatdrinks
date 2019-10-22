@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function DrinkCardList2() {
+export default function DrinkCardList() {
   const classes = useStyles();
 
   return (
