@@ -11,21 +11,22 @@ const useStyles = makeStyles(theme => ({
   },
 }));
   
-  export default function NewAccountButton() {
+  export default function SubmitLoginButton() {
     const classes = useStyles();
   
-    const handleClick = () => {
-      alert("You want to create an account");
-    };
+    // const handleClick = () => {
+    //   alert("this should submit the login info");
+    // };
   
     return (
       <div>
         <Button className={classes.button}
-        onClick={handleClick}
+        // onClick={handleClick}
         fullWidth="true"
         href="/search"
         color="primary"
-        >create an account</Button>
+        type="submit"
+        >submit</Button>
       </div>
     );
   }
